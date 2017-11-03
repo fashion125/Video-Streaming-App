@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="fBs-An-CcD" customClass="TextTableCell" customModule="Kanopy_TV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fBs-An-CcD" id="S0Q-fX-qc8">
+                <rect key="frame" x="0.0" y="0.0" width="1904" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbn-XO-BLp">
+                        <rect key="frame" x="16" y="0.0" width="1888" height="44"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dbn-XO-BLp" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leading" constant="16" id="Bf4-fU-05B"/>
+                    <constraint firstItem="Dbn-XO-BLp" firstAttribute="top" secondItem="S0Q-fX-qc8" secondAttribute="top" id="GpK-Qd-nqt"/>
+                    <constraint firstAttribute="trailing" secondItem="Dbn-XO-BLp" secondAttribute="trailing" constant="16" id="bE4-HP-3ax"/>
+                    <constraint firstAttribute="bottom" secondItem="Dbn-XO-BLp" secondAttribute="bottom" id="cjV-bI-BSb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleTextLabel" destination="Dbn-XO-BLp" id="GAL-m3-RTU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

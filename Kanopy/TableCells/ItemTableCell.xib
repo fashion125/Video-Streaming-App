@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="ItemTableCell" customModule="Kanopy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFz-o5-pAB">
+                        <rect key="frame" x="15" y="4" width="130" height="73"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V7R-8T-Ckw">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="73"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-6q-frb">
+                                <rect key="frame" x="0.0" y="38" width="130" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="NnZ-jj-KEs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Zqh-6q-frb" secondAttribute="bottom" id="5Wu-5D-Lpv"/>
+                            <constraint firstAttribute="bottom" secondItem="V7R-8T-Ckw" secondAttribute="bottom" id="GDt-kE-wQg"/>
+                            <constraint firstAttribute="trailing" secondItem="V7R-8T-Ckw" secondAttribute="trailing" id="Ly2-1e-hEh"/>
+                            <constraint firstItem="V7R-8T-Ckw" firstAttribute="top" secondItem="AFz-o5-pAB" secondAttribute="top" id="PWA-qy-Rna"/>
+                            <constraint firstAttribute="height" constant="73" id="fhN-pT-UQl"/>
+                            <constraint firstItem="V7R-8T-Ckw" firstAttribute="leading" secondItem="AFz-o5-pAB" secondAttribute="leading" id="hEB-nK-mJu"/>
+                            <constraint firstAttribute="width" constant="130" id="kN4-UD-CjY"/>
+                            <constraint firstItem="Zqh-6q-frb" firstAttribute="leading" secondItem="AFz-o5-pAB" secondAttribute="leading" id="nNY-Q5-2LS"/>
+                            <constraint firstAttribute="trailing" secondItem="Zqh-6q-frb" secondAttribute="trailing" id="p3Q-oL-5kP"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uof-DB-n7Y">
+                        <rect key="frame" x="153" y="6" width="152" height="14"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="14" name="AvenirNextLTPro-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="19" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFL-CY-vLe" customClass="ReadMoreLabel" customModule="Kanopy" customModuleProvider="target">
+                        <rect key="frame" x="153" y="20" width="152" height="54.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="14" name="AvenirNextLTPro-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="yFL-CY-vLe" firstAttribute="top" secondItem="Uof-DB-n7Y" secondAttribute="bottom" id="4e3-FA-VvL"/>
+                    <constraint firstItem="AFz-o5-pAB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="7iG-at-4Yx"/>
+                    <constraint firstItem="Uof-DB-n7Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="APy-Vn-Mgx"/>
+                    <constraint firstAttribute="trailing" secondItem="yFL-CY-vLe" secondAttribute="trailing" constant="15" id="Twl-IC-Yqa"/>
+                    <constraint firstAttribute="bottom" secondItem="yFL-CY-vLe" secondAttribute="bottom" constant="6" id="WAX-fq-Dfn"/>
+                    <constraint firstItem="AFz-o5-pAB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="d9d-at-O74"/>
+                    <constraint firstAttribute="trailing" secondItem="Uof-DB-n7Y" secondAttribute="trailing" constant="15" id="gHH-F7-0vn"/>
+                    <constraint firstItem="yFL-CY-vLe" firstAttribute="leading" secondItem="AFz-o5-pAB" secondAttribute="trailing" constant="8" id="gWV-Pg-HT6"/>
+                    <constraint firstItem="Uof-DB-n7Y" firstAttribute="leading" secondItem="AFz-o5-pAB" secondAttribute="trailing" constant="8" id="m8d-tD-8ay"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="descriptionTextLabel" destination="yFL-CY-vLe" id="sBP-59-con"/>
+                <outlet property="thumbView" destination="V7R-8T-Ckw" id="805-kB-PLq"/>
+                <outlet property="titleLabel" destination="Uof-DB-n7Y" id="rMf-9b-U16"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="72.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gradient" width="160" height="44"/>
+    </resources>
+</document>

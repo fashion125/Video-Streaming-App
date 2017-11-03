@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsVC" customModule="Kanopy_TV" customModuleProvider="target">
+            <connections>
+                <outlet property="linkDeviceButton" destination="jeu-me-Zgt" id="gDy-lY-MHD"/>
+                <outlet property="logOutButton" destination="cBY-8i-tRk" id="W59-Ne-Cfm"/>
+                <outlet property="membershipButton" destination="hHW-ju-peG" id="6N6-5c-4ee"/>
+                <outlet property="supportButton" destination="DKG-Kb-gyX" id="GrA-IN-ABL"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeu-me-Zgt">
+                    <rect key="frame" x="960" y="389" width="860" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="NO4-EF-hYQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="38"/>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="linkDeviceButtonAction:" destination="-1" eventType="primaryActionTriggered" id="kh9-a8-qxx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHW-ju-peG">
+                    <rect key="frame" x="960" y="468" width="860" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="YrU-v3-8sE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="38"/>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="membershipButtonAction:" destination="-1" eventType="primaryActionTriggered" id="PCe-oT-qDz"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big_icon" translatesAutoresizingMaskIntoConstraints="NO" id="GIY-go-gra">
+                    <rect key="frame" x="200" y="270" width="540" height="540"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="540" id="7JF-nJ-XDe"/>
+                        <constraint firstAttribute="width" constant="540" id="XIN-NB-ffW"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBY-8i-tRk">
+                    <rect key="frame" x="960" y="626" width="860" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="dPC-Mo-yed"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="38"/>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="logOutButtonActino:" destination="-1" eventType="primaryActionTriggered" id="7Na-g3-iZK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKG-Kb-gyX">
+                    <rect key="frame" x="960" y="547" width="860" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="Lkt-9G-Fm6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="38"/>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="supportButtonAction:" destination="-1" eventType="primaryActionTriggered" id="cAX-tc-n6F"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hHW-ju-peG" secondAttribute="trailing" constant="100" id="0D0-QR-OKu"/>
+                <constraint firstItem="jeu-me-Zgt" firstAttribute="leading" secondItem="GIY-go-gra" secondAttribute="trailing" constant="220" id="DnT-8s-5XL"/>
+                <constraint firstAttribute="trailing" secondItem="DKG-Kb-gyX" secondAttribute="trailing" constant="100" id="DpX-Od-DAH"/>
+                <constraint firstAttribute="trailing" secondItem="jeu-me-Zgt" secondAttribute="trailing" constant="100" id="L7M-xS-KMA"/>
+                <constraint firstItem="cBY-8i-tRk" firstAttribute="top" secondItem="DKG-Kb-gyX" secondAttribute="bottom" constant="14" id="Sbo-7a-RDD"/>
+                <constraint firstItem="GIY-go-gra" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Sw7-GG-akx"/>
+                <constraint firstItem="hHW-ju-peG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-40" id="Ygl-RC-2md"/>
+                <constraint firstAttribute="trailing" secondItem="cBY-8i-tRk" secondAttribute="trailing" constant="100" id="Ynl-6O-kLp"/>
+                <constraint firstItem="DKG-Kb-gyX" firstAttribute="top" secondItem="hHW-ju-peG" secondAttribute="bottom" constant="14" id="bg9-Ab-Ba2"/>
+                <constraint firstItem="hHW-ju-peG" firstAttribute="leading" secondItem="GIY-go-gra" secondAttribute="trailing" constant="220" id="dMq-Al-rvu"/>
+                <constraint firstItem="DKG-Kb-gyX" firstAttribute="leading" secondItem="GIY-go-gra" secondAttribute="trailing" constant="220" id="g2P-qB-YcF"/>
+                <constraint firstItem="hHW-ju-peG" firstAttribute="top" secondItem="jeu-me-Zgt" secondAttribute="bottom" constant="14" id="jsg-XD-w6h"/>
+                <constraint firstItem="cBY-8i-tRk" firstAttribute="leading" secondItem="GIY-go-gra" secondAttribute="trailing" constant="220" id="rpm-al-YgI"/>
+                <constraint firstItem="GIY-go-gra" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="200" id="wOY-st-hGH"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="big_icon" width="652" height="652"/>
+    </resources>
+</document>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNextLTPro-Medium.otf">
+            <string>AvenirNextLTPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="SocialTableCell" customModule="Kanopy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLT-qF-PPA">
+                        <rect key="frame" x="15" y="0.0" width="142.5" height="55.5"/>
+                        <color key="backgroundColor" red="0.23529411764705882" green="0.3529411764705882" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Medium" family="Avenir Next LT Pro" pointSize="16"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="contentEdgeInsets" minX="-12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <connections>
+                            <action selector="facebookButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nA5-gf-R2V"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQh-Vr-fEh">
+                        <rect key="frame" x="162.5" y="0.0" width="142.5" height="55.5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Medium" family="Avenir Next LT Pro" pointSize="16"/>
+                        <color key="tintColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="contentEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="googleButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="P6H-xq-gpL"/>
+                        </connections>
+                    </button>
+                    <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKD-3s-fFE">
+                        <rect key="frame" x="15" y="0.0" width="141" height="56"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb_icon" translatesAutoresizingMaskIntoConstraints="NO" id="FDI-YQ-JC3">
+                                <rect key="frame" x="8" y="16.5" width="23" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="5CL-To-ViU"/>
+                                    <constraint firstAttribute="height" constant="23" id="tgk-Zw-fJb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoY-og-sBW">
+                                <rect key="frame" x="42.5" y="17.5" width="73" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNextLTPro-Medium" family="Avenir Next LT Pro" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.35294117650000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FoY-og-sBW" firstAttribute="centerY" secondItem="hKD-3s-fFE" secondAttribute="centerY" id="7wy-K2-2t5"/>
+                            <constraint firstItem="FDI-YQ-JC3" firstAttribute="centerY" secondItem="hKD-3s-fFE" secondAttribute="centerY" id="8hL-Mg-w3t"/>
+                            <constraint firstItem="FoY-og-sBW" firstAttribute="centerX" secondItem="hKD-3s-fFE" secondAttribute="centerX" constant="8" id="nHV-P5-Q67"/>
+                            <constraint firstItem="FDI-YQ-JC3" firstAttribute="centerY" secondItem="hKD-3s-fFE" secondAttribute="centerY" id="nLv-SQ-KFh"/>
+                            <constraint firstItem="FDI-YQ-JC3" firstAttribute="leading" secondItem="hKD-3s-fFE" secondAttribute="leading" constant="8" id="rIZ-Hl-q7Y"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOI-vT-Gpy">
+                        <rect key="frame" x="164" y="0.0" width="141" height="56"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google_icon" translatesAutoresizingMaskIntoConstraints="NO" id="MmD-RH-IxY">
+                                <rect key="frame" x="8" y="18" width="19" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Rcg-6k-98f"/>
+                                    <constraint firstAttribute="width" constant="19" id="kHf-AE-Zvl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUp-5F-yBn">
+                                <rect key="frame" x="43.5" y="17.5" width="55.5" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNextLTPro-Medium" family="Avenir Next LT Pro" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MmD-RH-IxY" firstAttribute="centerY" secondItem="qOI-vT-Gpy" secondAttribute="centerY" id="2yl-jW-tqR"/>
+                            <constraint firstItem="nUp-5F-yBn" firstAttribute="centerY" secondItem="qOI-vT-Gpy" secondAttribute="centerY" id="3AA-c4-rl1"/>
+                            <constraint firstItem="nUp-5F-yBn" firstAttribute="centerX" secondItem="qOI-vT-Gpy" secondAttribute="centerX" id="LqA-U9-viG"/>
+                            <constraint firstItem="MmD-RH-IxY" firstAttribute="leading" secondItem="qOI-vT-Gpy" secondAttribute="leading" constant="8" id="h39-Wa-Bcu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="hKD-3s-fFE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2As-qJ-pYU"/>
+                    <constraint firstItem="aLT-qF-PPA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4gQ-UE-xCT"/>
+                    <constraint firstAttribute="bottom" secondItem="eQh-Vr-fEh" secondAttribute="bottom" id="5wU-a1-GRo"/>
+                    <constraint firstItem="aLT-qF-PPA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="681-dS-nwm"/>
+                    <constraint firstItem="qOI-vT-Gpy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AGz-Of-3DJ"/>
+                    <constraint firstAttribute="bottom" secondItem="qOI-vT-Gpy" secondAttribute="bottom" id="C6s-NM-7fW"/>
+                    <constraint firstItem="qOI-vT-Gpy" firstAttribute="width" secondItem="hKD-3s-fFE" secondAttribute="width" id="IS9-MY-r5y"/>
+                    <constraint firstItem="qOI-vT-Gpy" firstAttribute="leading" secondItem="hKD-3s-fFE" secondAttribute="trailing" constant="8" id="JnU-mU-GjE"/>
+                    <constraint firstAttribute="trailing" secondItem="eQh-Vr-fEh" secondAttribute="trailing" constant="15" id="MWP-H6-dln"/>
+                    <constraint firstItem="eQh-Vr-fEh" firstAttribute="width" secondItem="aLT-qF-PPA" secondAttribute="width" id="UZ8-iF-xUS"/>
+                    <constraint firstAttribute="trailing" secondItem="qOI-vT-Gpy" secondAttribute="trailing" constant="15" id="XV6-wd-ISp"/>
+                    <constraint firstItem="eQh-Vr-fEh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bHB-Qd-ims"/>
+                    <constraint firstAttribute="bottom" secondItem="aLT-qF-PPA" secondAttribute="bottom" id="daE-xO-N1F"/>
+                    <constraint firstItem="hKD-3s-fFE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lqH-Fd-tV2"/>
+                    <constraint firstItem="eQh-Vr-fEh" firstAttribute="leading" secondItem="aLT-qF-PPA" secondAttribute="trailing" constant="5" id="nJf-5f-aex"/>
+                    <constraint firstAttribute="bottom" secondItem="hKD-3s-fFE" secondAttribute="bottom" id="sjd-6n-gT9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="facebookButton" destination="aLT-qF-PPA" id="Ufd-Ko-dfs"/>
+                <outlet property="facebookView" destination="hKD-3s-fFE" id="yJd-YZ-Qfw"/>
+                <outlet property="googleButton" destination="eQh-Vr-fEh" id="0Hx-8h-aOC"/>
+                <outlet property="googleView" destination="qOI-vT-Gpy" id="kii-DH-8br"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="60"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fb_icon" width="21" height="23"/>
+        <image name="google_icon" width="19" height="19"/>
+    </resources>
+</document>

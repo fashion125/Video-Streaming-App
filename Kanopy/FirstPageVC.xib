@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstPageVC" customModule="Kanopy" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImage" destination="cId-yW-Fdi" id="HKX-uO-EQ4"/>
+                <outlet property="titleLabel" destination="T8K-mJ-26D" id="Wfe-Gw-s0i"/>
+                <outlet property="view" destination="ZCv-cX-TG9" id="NxJ-TJ-pWv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZCv-cX-TG9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_screen_1_iphone" translatesAutoresizingMaskIntoConstraints="NO" id="cId-yW-Fdi">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8K-mJ-26D">
+                    <rect key="frame" x="80" y="423" width="254" height="69"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">The world's finest cinema.
+Free for you, brought to you
+by your library</string>
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="20" name="AvenirNextLTPro-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="0.82999999999999996" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <attributedString key="attributedText">
+                            <fragment>
+                                <string key="content">The world's finest cinema.
+Free for you, brought to you
+by your library</string>
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="20" name="AvenirNextLTPro-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="0.84999999999999998" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </variation>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="kanopy_thoughtful" translatesAutoresizingMaskIntoConstraints="NO" id="eAJ-WK-4jx">
+                    <rect key="frame" x="70" y="240" width="274" height="130"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T8K-mJ-26D" firstAttribute="centerX" secondItem="cId-yW-Fdi" secondAttribute="centerX" id="ASf-HK-Kfs"/>
+                <constraint firstItem="T8K-mJ-26D" firstAttribute="centerY" secondItem="ZCv-cX-TG9" secondAttribute="centerY" constant="89" id="Fgq-Bs-rUl">
+                    <variation key="heightClass=regular-widthClass=regular" constant="126"/>
+                </constraint>
+                <constraint firstItem="eAJ-WK-4jx" firstAttribute="centerY" secondItem="ZCv-cX-TG9" secondAttribute="centerY" constant="-63" id="LXe-Fp-Va4">
+                    <variation key="heightClass=regular-widthClass=regular" constant="-94"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="cId-yW-Fdi" secondAttribute="bottom" id="MXB-Xj-NQO"/>
+                <constraint firstItem="eAJ-WK-4jx" firstAttribute="centerX" secondItem="ZCv-cX-TG9" secondAttribute="centerX" id="ZBl-sb-i34"/>
+                <constraint firstItem="cId-yW-Fdi" firstAttribute="leading" secondItem="ZCv-cX-TG9" secondAttribute="leading" id="geP-Y5-28C"/>
+                <constraint firstItem="cId-yW-Fdi" firstAttribute="top" secondItem="ZCv-cX-TG9" secondAttribute="top" id="kCa-90-1G3"/>
+                <constraint firstItem="T8K-mJ-26D" firstAttribute="centerX" secondItem="ZCv-cX-TG9" secondAttribute="centerX" id="ypS-qi-juT"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kanopy_thoughtful" width="274" height="130"/>
+        <image name="start_screen_1_iphone" width="320" height="568"/>
+    </resources>
+</document>

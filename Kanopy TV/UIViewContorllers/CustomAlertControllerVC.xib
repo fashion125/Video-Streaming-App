@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertControllerVC" customModule="Kanopy_TV" customModuleProvider="target">
+            <connections>
+                <outlet property="additionalButton" destination="a15-2V-nEj" id="66J-fp-ZOF"/>
+                <outlet property="bgView" destination="1Zi-0O-RvZ" id="gNU-jY-e8R"/>
+                <outlet property="mainButton" destination="ztV-kR-hgp" id="YLH-sR-lkL"/>
+                <outlet property="messageLabel" destination="FRU-Bt-Ler" id="w0B-Qg-BTV"/>
+                <outlet property="titleLabel" destination="w6a-G2-e65" id="Bdj-nu-Cvu"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Zi-0O-RvZ">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDI-BY-hjH">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRU-Bt-Ler">
+                            <rect key="frame" x="610" y="523" width="700" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="700" id="Xpk-tl-83v"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="29"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6a-G2-e65">
+                            <rect key="frame" x="660" y="439" width="600" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="600" id="Jjh-uX-LYC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="48"/>
+                            <color key="textColor" red="0.89019607840000003" green="0.33333333329999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztV-kR-hgp">
+                            <rect key="frame" x="773" y="598" width="375" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="Ksh-aA-BO4"/>
+                                <constraint firstAttribute="width" constant="375" id="m8i-Ie-f6X"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="34"/>
+                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="mainButtonAction:" destination="-1" eventType="primaryActionTriggered" id="8uY-2f-iIy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a15-2V-nEj">
+                            <rect key="frame" x="773" y="672" width="375" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="1tH-JQ-eAX"/>
+                                <constraint firstAttribute="width" constant="375" id="8NW-jg-CFu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="34"/>
+                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="additionalButtonAction:" destination="-1" eventType="primaryActionTriggered" id="ROJ-YL-SWQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FRU-Bt-Ler" firstAttribute="top" secondItem="w6a-G2-e65" secondAttribute="bottom" constant="26" id="1yD-0u-Ihf"/>
+                        <constraint firstItem="w6a-G2-e65" firstAttribute="centerX" secondItem="iDI-BY-hjH" secondAttribute="centerX" id="2U6-Uf-Z2f"/>
+                        <constraint firstItem="ztV-kR-hgp" firstAttribute="top" secondItem="FRU-Bt-Ler" secondAttribute="bottom" constant="40" id="31G-li-c7f"/>
+                        <constraint firstItem="a15-2V-nEj" firstAttribute="centerX" secondItem="ztV-kR-hgp" secondAttribute="centerX" id="3bt-br-Oox"/>
+                        <constraint firstItem="FRU-Bt-Ler" firstAttribute="centerX" secondItem="iDI-BY-hjH" secondAttribute="centerX" id="CI5-6k-uUv"/>
+                        <constraint firstItem="a15-2V-nEj" firstAttribute="top" secondItem="ztV-kR-hgp" secondAttribute="bottom" constant="14" id="WtA-y2-wma"/>
+                        <constraint firstItem="ztV-kR-hgp" firstAttribute="centerX" secondItem="iDI-BY-hjH" secondAttribute="centerX" id="nue-Vh-IrZ"/>
+                        <constraint firstItem="FRU-Bt-Ler" firstAttribute="centerY" secondItem="iDI-BY-hjH" secondAttribute="centerY" id="z1i-je-9BA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iDI-BY-hjH" secondAttribute="bottom" id="7C3-D0-lkB"/>
+                <constraint firstItem="iDI-BY-hjH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Mn-oY-Vdy"/>
+                <constraint firstAttribute="bottom" secondItem="1Zi-0O-RvZ" secondAttribute="bottom" id="RVI-AM-UkA"/>
+                <constraint firstItem="1Zi-0O-RvZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bWV-6p-HWs"/>
+                <constraint firstItem="iDI-BY-hjH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gW1-8q-KHc"/>
+                <constraint firstItem="1Zi-0O-RvZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lPp-7a-FNg"/>
+                <constraint firstAttribute="trailing" secondItem="iDI-BY-hjH" secondAttribute="trailing" id="v0j-AP-bzZ"/>
+                <constraint firstAttribute="trailing" secondItem="1Zi-0O-RvZ" secondAttribute="trailing" id="y5f-4O-Vtz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

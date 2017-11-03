@@ -1,0 +1,237 @@
+/*
+ Localizable.strings
+ Kanopy
+ 
+ Created by Ilya Bondarenko on 2/8/17.
+ 
+ */
+
+SEE_MORE = "See More";
+ERROR = "Error";
+SORT_BY = "Sort by";
+VIDEO = "video";
+VIDEOS = "videos";
+SEARCH = "Search";
+SEARCH_TITLE = "Search for videos by title";
+SUGGESTED_RESULTS = "Suggested results";
+RECOMMEND_VIDEO = "Suggested videos";
+
+RELEVANCE = "Revelance";
+ALPHABET = "Alphabet";
+MOST_POPULAR = "Most popular";
+
+HOME = "Home";
+PROFILE = "Profile";
+SETTINGS = "Settings";
+ABOUT_THE_MOVIE = "About the Video";
+
+COLLECTION = "Collection";
+PLAYLIST = "Playlist";
+COLLECTION_PLAYLIST = "Collection Playlist";
+
+DIRECTOR = "Director";
+FILMMAKERS = "Filmmakers";
+CAST = "Cast";
+LANGUAGES = "Languages";
+READ_MORE = "Read More";
+YEAR = "Year";
+
+SUBJECTS = "Subjects";
+EPISODE = "Episode";
+EPISODES = "Episodes";
+
+SHOW_MORE = "Show More";
+SHOW_LESS = "Show Less";
+
+SIGN_IN = "Log In";
+SIGN_UP = "Sign Up";
+
+YES = "Yes";
+NO = "No";
+OFF = "Off";
+
+NOT_AVAILABLE = "Not available";
+SIGN_IN_TEXT = "Please log in";
+SIGN_UP_TEXT = "Sign up now, it’s free!";
+
+WELCOME = "Welcome to";
+EMAIL = "Email";
+PASSWORD = "Password";
+FIRST_NAME = "First Name";
+LAST_NAME = "Last Name";
+
+FORGOT_PASSWORD = "Forgot password?";
+DONT_HAVE_ACCOUNT = "I don’t have an account";
+ALREADY_HAVE_ACCOUNT = "I already have an account";
+
+THANKS_SIGN_UP = "Thanks for signing up";
+SENT_EMAIL_TEXT = "We’ve sent you an email to";
+
+PLEASE_FOLLOW_LINK = "Go to your email, click on\n\"Verify Email\" to add your library\nmembership and start watching";
+RESEND_EMAIL_TEXT = "Resend verification email";
+SIGN_OUT = "Sign Out";
+
+
+EMAIL_VERIFIED = "Email verified";
+EMAIL_VERIFIED_DESCRIPTION = "";
+ADD_YOUR_LIBRARY = "Add your library";
+ADD_YOUR_LIBRARY_DESCRIPTION = "Please add your library to your Kanopy account";
+ADD_LIBRARY = "Add library";
+
+MEMBERSHIP_ADDED = "Library added";
+MEMBERSHIP_STATUS_LOOKUP = "Connect membership";
+MEMBERSHIP_STATUS_LOOKUP_DESCRIPTION_WITH = "Connect your membership with ";
+STATUS_ACTIVE = "Status active";
+GREAT_START = "Great start!";
+ALMOST_DONE = "We are almost done!";
+CONGRATULATION_NAME = "Congratulations";
+READY_TO_WATCH = "You are ready to watch videos.";
+SIGN_UP_PROGRESS = "SIGN UP PROGRESS";
+START_WATCHING = "Start watching";
+RESEND_VERIFICATION_EMAIL = "Resend verification email";
+UNLIMITED_ACCESS = "Unlimited access";
+LIBRARY_MEMBERSHIP_NOW_CONNECTED = "Your library membership is\nnow connected.";
+HERE_IS_HOW_IT_WORKS = "Here's how it works";
+UP_TO_X_FILMS_PER_MONTH_START = "Up to";
+UP_TO_X_FILMS_PER_MONTH_END = "films per month";
+THREE_DAYS_TO_WATCH_EACH_FILM = "3 days to watch each film";
+PLAY_CREDITS_RESET_ON_THE_FIRST_OF_THE_MONTH = "Play credits reset on the first of the month";
+ANY_DEVICE = "Any device";
+
+OUT_OF = "out of";
+
+CONGRATULATION = "Congratulations!";
+SUCCESS_ACTIVATED_ACCOUNT = "You have succesfully activated your account";
+ENJOY_KANOPY = "Enjoy Kanopy!";
+EXIT = "Exit";
+
+RESET_PASSWORD_DESCRIPTION = "Please enter the email address\nassociated with your account to\nreset your password";
+RESET = "Reset";
+SUCCESSFUL = "Successful";
+PASSWORD_IS_RESET = "Password has been reset";
+TITLE_PASSWORD_RESET_INSTRUCTIONS_SENT = "Password reset";
+DESCRIPTION_PASSWORD_RESET_INSTRUCTIONS_SENT = "Instructions have been sent to your email address";
+IS_NOT_VALID_EMAIL = "Please enter valid email";
+
+
+CELLULAR_DATA_USAGE = "Cellular Data";
+CELLULAR_DATA_USAGE_DESCRIPTION = "";
+VIDEO_QUALITY = "Video Quality";
+VIDEO_QUALITY_DESCRIPTION = "Standard";
+CLOSED_CAPTION = "Closed Captions";
+CLOSED_CAPTION_DESCRIPTION = "";
+FEEDBACK = "Feedback";
+HELP_CENTER = "Help Center";
+
+LINK_YOUR_ROKU = "Link Your Roku";
+LINK_ROKU_TO_KANOPY = "Link Roku to Kanopy";
+ENTER_THE_CODE_DISPLAYED_ON_YOUR_TV_ROKU = "Enter the code displayed on your TV screen to link your Roku to your Kanopy account";
+CODE = "Code";
+LINK_TO_MY_ACCOUNT = "Link to my account";
+CODE_SHOULD_BE_ALPHANUMERICAL_AND_SIX_CHARACTERS_LONG = "Code should be alphanumerical and 6 characters long";
+ROKU_SUCCESSFULLY_LINKED = "Roku successfully linked";
+DONT_HAVE_KANOPY_ON_ROKU_CLICK_HERE_TO_ADD_IT = "Don't have Kanopy on your Roku?\nClick here to add it";
+
+VIDEO_PLAYBACK = "Video playback";
+
+AUTO = "Auto";
+AUTO_DESCRIPTION = "Plays video at the highest quality possible";
+BASIC = "Basic";
+BASIC_DESCRIPTION = "Limits video quality and saves bandwidth";
+
+HD = "HD";
+HD_DESCRIPTION = "Better video quality";
+
+SIGN_OUT_MESSAGE = "Are you sure you want\n to sign out now?";
+USER_ACTIVATION = "User Status";
+
+OR = "Or";
+PROFILE = "Profile";
+
+EXPIRED = "Expired";
+ACTIVE = "Active";
+
+MEMBERSHIP = "Membership";
+CREADITS_LEFT_TEXT = "Library’s monthly play credits left";
+
+CURRENT = "Current";
+MY_WATCHLIST = "My Watchlist";
+
+CANCEL = "Cancel";
+REMOVE_FROM_PLAYLIST = "Remove from Watchlist";
+
+DEFAULT_MEMBERSHIP = "Membership";
+
+INACTIVE = "Membership Inactive";
+INACTIVE_DESCRIPTION = "Please go to www.kanopy.com/users to activate it";
+
+BLOCKED = "Membership Blocked";
+BLOCKED_DESCRIPTION = "Please contact your library to get it resolved";
+
+ADD_TO_WATCHLIST = " Add to Watchlist";
+REMOVE_FROM_WATCHLIST = " Remove from Watchlist";
+
+THIS_MOVIE_IS_ALREADY_PLAYING = "This movie is already playing";
+RESUME_PLAYING_WHERE_YOU_LEFT_IT_OFF = "Resume watching where you left off?";
+RESUME_VIDEO_TV = "Resume video";
+RESUME_PLAYING_WHERE_YOU_LEFT_IT_OFF_TV = "Resume video from the last position?";
+PAY_FROM_START = "Pay from start";
+
+CELLULAR_DATA_DISABLED = "Cellular data disabled";
+CELLULAR_DATA_DISABLED_DESCRIPTION = "You are currently connected through cellular data";
+
+NO_CONNECTION = "No connection";
+NO_CONNECTION_DESCRIPTION = "Internet not reachable";
+
+CANT_PLAY_VIDEO = "Can't play video";
+CANT_PLAY_VIDEO_MESSAGE = "";
+
+
+VERSION = "Version";
+
+TERMS_AND_PRIVACY_POLICY_TEXT = "By signing up you confirm you're 13 years or older and agree to Kanopy's Terms and Privacy Policy";
+TERMS = "Terms";
+PRIVACY_POLICY = "Privacy Policy";
+
+FIRST_START_TITLE_FIRST_PAGE = "The world's finest cinema.\nFree for you, brought to you\nby your library";
+FIRST_START_TITLE_SECOND_PAGE = "Hundreds of\nnew films\neach month";
+FIRST_START_TITLE_THIRD_PAGE = "Sign up to add\nyour library and\nstart watching";
+FIRST_START_ALREADY_A_MEMBER_THIRD_PAGE = "Already a member?";
+FIRST_START_BROWSE_AS_GUEST_THIRD_PAGE = "Browse as guest";
+
+RESET_PASSWORD = "Reset Password";
+
+
+LINK_DEVICE = "Link your Kanopy account";
+GENERATE_NEW_CODE = "Generate new code";
+
+MAIN = "Main";
+NO_MEMBERSHIP = "No Membership";
+MEMBERSHIP = "Membership";
+
+PLEASE_ADD_AND_ACTIVATE_A_MEMBERSHIP = "Please add and activate a membership";
+PLEASE_REACTIVATE_YOUR_MEMBERSHIP = "Please reactivate your membership";
+
+CONTINUE_ONBOARDING = "Continue onboarding";
+
+TITLE_ERROR_FIELDS_SIGN_UP = "Fields not valid";
+DESCRIPTION_ERROR_FIELDS_SIGN_UP = "Please check all fields!";
+TITLE_ERROR_EMAIL_SIGN_UP = "Email not valid";
+DESCRIPTION_ERROR_EMAIL_SIGN_UP = "Please check the email";
+TITLE_ERROR_PASSWORD_SIGN_UP = "Password not valid";
+DESCRIPTION_ERROR_PASSWORD_SIGN_UP = "The password must be at least 6 characters long";
+
+SUPPORT = "Support";
+
+CASTING_TO_APPLE_TV = "Now playing on your TV";
+RUNNING_TIME = "Running time";
+
+MEMBERSHIP_INFORMATION = "Membership information";
+USERNAME = "Username";
+MEMBERSHIP = "Membership";
+STATUS = "Status";
+SELECT_ANOTHER_LIBRARY = "Select another library";
+BACK = "Back";
+
+MY_MEMBERSHIPS = "My memberships";
+SELECT_ANOTHER_LIBRARY_DESCRIPTION = "Select another library you are a member of";

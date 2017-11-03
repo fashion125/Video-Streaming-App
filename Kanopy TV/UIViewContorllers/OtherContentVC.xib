@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OtherContentVC" customModule="Kanopy_TV" customModuleProvider="target">
+            <connections>
+                <outlet property="bgThumbImageView" destination="sKa-zp-7xR" id="C6T-fp-7H9"/>
+                <outlet property="bgView" destination="icG-pv-I6P" id="vpF-AJ-6hN"/>
+                <outlet property="contentLoadTitle" destination="bCo-OB-gm1" id="nTL-Qh-tGs"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sKa-zp-7xR">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icG-pv-I6P">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSt-id-21B">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCo-OB-gm1">
+                            <rect key="frame" x="100" y="511" width="1720" height="58"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="48"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bCo-OB-gm1" firstAttribute="centerY" secondItem="rSt-id-21B" secondAttribute="centerY" id="1eF-kp-Gsn"/>
+                        <constraint firstAttribute="trailing" secondItem="bCo-OB-gm1" secondAttribute="trailing" constant="100" id="TjY-kQ-jVo"/>
+                        <constraint firstItem="bCo-OB-gm1" firstAttribute="leading" secondItem="rSt-id-21B" secondAttribute="leading" constant="100" id="dyd-1e-x7e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="icG-pv-I6P" secondAttribute="trailing" id="8Vq-F0-EM9"/>
+                <constraint firstAttribute="bottom" secondItem="rSt-id-21B" secondAttribute="bottom" id="DVj-ay-S9a"/>
+                <constraint firstItem="icG-pv-I6P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dmh-2N-8iT"/>
+                <constraint firstAttribute="trailing" secondItem="rSt-id-21B" secondAttribute="trailing" id="FVS-eT-Twu"/>
+                <constraint firstAttribute="bottom" secondItem="icG-pv-I6P" secondAttribute="bottom" id="K9E-Hn-9ls"/>
+                <constraint firstItem="rSt-id-21B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nht-yO-zz3"/>
+                <constraint firstAttribute="bottom" secondItem="sKa-zp-7xR" secondAttribute="bottom" id="SCe-yG-gyk"/>
+                <constraint firstAttribute="trailing" secondItem="sKa-zp-7xR" secondAttribute="trailing" id="V4h-1l-M34"/>
+                <constraint firstItem="icG-pv-I6P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WAP-JM-4pY"/>
+                <constraint firstItem="sKa-zp-7xR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gZt-En-LeT"/>
+                <constraint firstItem="rSt-id-21B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hzQ-eW-RnC"/>
+                <constraint firstItem="sKa-zp-7xR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nkY-6K-UvA"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreInfoVC" customModule="Kanopy_TV" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="X3p-xo-ybt" id="GmY-Js-tin"/>
+                <outlet property="bgBlurView" destination="DJ4-RC-6In" id="IGj-0v-w35"/>
+                <outlet property="tableView" destination="fqW-V9-S8D" id="1nk-Sj-5bw"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJ4-RC-6In">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ks0-2C-Vus">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3p-xo-ybt">
+                            <rect key="frame" x="773" y="956" width="374" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="VPw-Dk-fik"/>
+                                <constraint firstAttribute="width" constant="374" id="ma6-Y1-hjg"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="backButtonAction:" destination="-1" eventType="primaryActionTriggered" id="p6f-wi-KiJ"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="fqW-V9-S8D">
+                            <rect key="frame" x="400" y="0.0" width="1120" height="916"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="X3p-xo-ybt" secondAttribute="bottom" constant="60" id="Afj-fi-tAc"/>
+                        <constraint firstItem="fqW-V9-S8D" firstAttribute="leading" secondItem="ks0-2C-Vus" secondAttribute="leading" constant="400" id="USd-ym-CIg"/>
+                        <constraint firstItem="X3p-xo-ybt" firstAttribute="top" secondItem="fqW-V9-S8D" secondAttribute="bottom" constant="40" id="VzV-Ja-J8q"/>
+                        <constraint firstItem="fqW-V9-S8D" firstAttribute="top" secondItem="ks0-2C-Vus" secondAttribute="top" id="oMt-VR-314"/>
+                        <constraint firstAttribute="trailing" secondItem="fqW-V9-S8D" secondAttribute="trailing" constant="400" id="rxO-zf-wsP"/>
+                        <constraint firstItem="X3p-xo-ybt" firstAttribute="centerX" secondItem="ks0-2C-Vus" secondAttribute="centerX" id="t9u-XU-Vt4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DJ4-RC-6In" secondAttribute="trailing" id="Igg-Bo-yvE"/>
+                <constraint firstItem="ks0-2C-Vus" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ko4-2Q-I6l"/>
+                <constraint firstItem="DJ4-RC-6In" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LZi-6t-YVQ"/>
+                <constraint firstAttribute="trailing" secondItem="ks0-2C-Vus" secondAttribute="trailing" id="QnC-ei-nlV"/>
+                <constraint firstAttribute="bottom" secondItem="DJ4-RC-6In" secondAttribute="bottom" id="VX5-jj-iZh"/>
+                <constraint firstItem="ks0-2C-Vus" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cqe-mI-Lbs"/>
+                <constraint firstItem="DJ4-RC-6In" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fSy-9Q-wDb"/>
+                <constraint firstAttribute="bottom" secondItem="ks0-2C-Vus" secondAttribute="bottom" id="hMY-86-xk5"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

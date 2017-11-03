@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubjectsVC" customModule="Kanopy_TV" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="hUd-UF-ZAC" id="cFT-kF-F47"/>
+                <outlet property="tableView" destination="RKv-Ql-B4Z" id="4lS-X5-W80"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUd-UF-ZAC">
+                    <rect key="frame" x="0.0" y="0.0" width="630" height="1080"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="630" id="Ykh-At-IaZ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="RKv-Ql-B4Z">
+                    <rect key="frame" x="60" y="0.0" width="510" height="1080"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="510" id="VKG-oH-vx9"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hUd-UF-ZAC" secondAttribute="bottom" id="2in-PM-DV7"/>
+                <constraint firstItem="hUd-UF-ZAC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fkg-uN-wWn"/>
+                <constraint firstItem="RKv-Ql-B4Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="J3x-dS-i0J"/>
+                <constraint firstItem="RKv-Ql-B4Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="JHj-dp-VVn"/>
+                <constraint firstItem="hUd-UF-ZAC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aoQ-F7-U48"/>
+                <constraint firstAttribute="bottom" secondItem="RKv-Ql-B4Z" secondAttribute="bottom" id="n8H-nC-qcj"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNextLTPro-Regular.otf">
+            <string>AvenirNextLTPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdPageVC" customModule="Kanopy" customModuleProvider="target">
+            <connections>
+                <outlet property="alreadyAMemberLabel" destination="PcQ-bY-LR7" id="UjQ-tR-iFc"/>
+                <outlet property="backgroundImage" destination="iuK-KN-eNb" id="2NF-PM-xZ1"/>
+                <outlet property="browseAsGuestLabel" destination="ZYN-20-EGy" id="z3X-ua-GNg"/>
+                <outlet property="signUpButton" destination="JQS-OA-lwK" id="4Tk-hp-B5F"/>
+                <outlet property="titleLabel" destination="Tcn-ld-fVl" id="bkb-MT-f2y"/>
+                <outlet property="view" destination="0fE-hP-PdU" id="FBh-Wv-yjx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0fE-hP-PdU">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_screen_3_iphone" translatesAutoresizingMaskIntoConstraints="NO" id="iuK-KN-eNb">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcQ-bY-LR7">
+                    <rect key="frame" x="381" y="832" width="263.5" height="30.5"/>
+                    <gestureRecognizers/>
+                    <attributedString key="attributedText">
+                        <fragment content="Already a member? Log In">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="15" name="Avenir-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <attributedString key="attributedText">
+                            <fragment content="Already a member? Log In">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="22" name="Avenir-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcn-ld-fVl">
+                    <rect key="frame" x="400" y="483.5" width="225" height="117"/>
+                    <gestureRecognizers/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Sign up to add
+your library and
+start watching</string>
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="32" name="AvenirNextLTPro-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="0.89000000000000001" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <attributedString key="attributedText">
+                            <fragment>
+                                <string key="content">Sign up to add
+your library and
+start watching</string>
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="32" name="AvenirNextLTPro-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="0.89000000000000001" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </variation>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQS-OA-lwK">
+                    <rect key="frame" x="387" y="740" width="250" height="60"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.3294117647" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="185" id="OPa-VK-VwO">
+                            <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="40" id="zzF-cC-rFk">
+                            <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextLTPro-Medium" family="Avenir Next LT Pro" pointSize="16"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Sign Up"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Regular" family="Avenir Next LT Pro" pointSize="29"/>
+                    </variation>
+                    <connections>
+                        <action selector="signUpButtonAction:" destination="-1" eventType="touchUpInside" id="Qh1-99-hp6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYN-20-EGy">
+                    <rect key="frame" x="445.5" y="1218" width="134.5" height="25"/>
+                    <gestureRecognizers/>
+                    <attributedString key="attributedText">
+                        <fragment content="Browse as guest">
+                            <attributes>
+                                <color key="NSBackgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="NSColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="13" name="AvenirNextLTPro-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <attributedString key="attributedText">
+                            <fragment content="Browse as guest">
+                                <attributes>
+                                    <color key="NSColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="18" name="AvenirNextLTPro-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="PcQ-bY-LR7" firstAttribute="centerY" secondItem="0fE-hP-PdU" secondAttribute="centerY" constant="121" id="0ae-ud-FBU">
+                    <variation key="heightClass=regular-widthClass=regular" constant="164"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="ZYN-20-EGy" secondAttribute="bottom" constant="84" id="3Ch-lu-I2V">
+                    <variation key="heightClass=regular-widthClass=regular" constant="123"/>
+                </constraint>
+                <constraint firstItem="JQS-OA-lwK" firstAttribute="centerX" secondItem="Tcn-ld-fVl" secondAttribute="centerX" id="3k8-YR-ta6"/>
+                <constraint firstItem="Tcn-ld-fVl" firstAttribute="centerY" secondItem="0fE-hP-PdU" secondAttribute="centerY" constant="-73" id="5Fl-gt-ucx">
+                    <variation key="heightClass=regular-widthClass=regular" constant="-141"/>
+                </constraint>
+                <constraint firstItem="iuK-KN-eNb" firstAttribute="leading" secondItem="0fE-hP-PdU" secondAttribute="leading" id="Li7-O6-dfF"/>
+                <constraint firstItem="PcQ-bY-LR7" firstAttribute="centerX" secondItem="0fE-hP-PdU" secondAttribute="centerX" id="Vqv-NT-Ekv"/>
+                <constraint firstAttribute="bottom" secondItem="iuK-KN-eNb" secondAttribute="bottom" id="Xa0-mi-YPp"/>
+                <constraint firstItem="iuK-KN-eNb" firstAttribute="top" secondItem="0fE-hP-PdU" secondAttribute="top" id="ZIU-mz-c08"/>
+                <constraint firstItem="Tcn-ld-fVl" firstAttribute="centerX" secondItem="0fE-hP-PdU" secondAttribute="centerX" id="kG1-dO-TDL"/>
+                <constraint firstItem="JQS-OA-lwK" firstAttribute="centerY" secondItem="0fE-hP-PdU" secondAttribute="centerY" constant="69" id="nyq-K1-KoJ">
+                    <variation key="heightClass=regular-widthClass=regular" constant="87"/>
+                </constraint>
+                <constraint firstItem="JQS-OA-lwK" firstAttribute="centerX" secondItem="iuK-KN-eNb" secondAttribute="centerX" id="pgk-A2-Vl0"/>
+                <constraint firstItem="ZYN-20-EGy" firstAttribute="centerX" secondItem="0fE-hP-PdU" secondAttribute="centerX" id="sEc-fv-MAe"/>
+            </constraints>
+            <point key="canvasLocation" x="33" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="start_screen_3_iphone" width="320" height="568"/>
+    </resources>
+</document>

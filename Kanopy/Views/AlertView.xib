@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNextLTPro-Light.otf">
+            <string>AvenirNextLTPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="Kanopy" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="KAN-8R-Dbl" id="Uc2-a7-zMN"/>
+                <outlet property="confirmButton" destination="VjH-hS-QNT" id="482-tK-uvI"/>
+                <outlet property="titleLabel" destination="h3S-m3-2YA" id="o4G-LU-jec"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHt-Q5-LfA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXr-bI-N8H">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2K-Tv-pTg">
+                            <rect key="frame" x="311" y="0.0" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="EnA-M3-sQO"/>
+                                <constraint firstAttribute="height" constant="64" id="Tmq-4W-8L5"/>
+                            </constraints>
+                            <state key="normal" image="close_light_icon"/>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="FWb-xy-jqZ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3S-m3-2YA">
+                            <rect key="frame" x="15" y="280" width="345" height="27.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNextLTPro-Light" family="Avenir Next LT Pro" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjH-hS-QNT">
+                            <rect key="frame" x="109.5" y="333.5" width="64" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="ZR3-q3-R9w"/>
+                                <constraint firstAttribute="height" constant="28" id="rlW-YW-7lo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNextLTPro-Light" family="Avenir Next LT Pro" pointSize="15"/>
+                            <state key="normal" title="Yes">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmButtonAction:" destination="-1" eventType="touchUpInside" id="5SE-uU-KIF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAN-8R-Dbl">
+                            <rect key="frame" x="201.5" y="333.5" width="64" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="6k0-aH-09g"/>
+                                <constraint firstAttribute="width" constant="64" id="UIP-su-M39"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNextLTPro-Light" family="Avenir Next LT Pro" pointSize="15"/>
+                            <state key="normal" title="No">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="AYq-pw-tlg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KAN-8R-Dbl" firstAttribute="centerX" secondItem="YXr-bI-N8H" secondAttribute="centerX" constant="46" id="1kN-nA-7wB"/>
+                        <constraint firstItem="h3S-m3-2YA" firstAttribute="leading" secondItem="YXr-bI-N8H" secondAttribute="leading" constant="15" id="2SP-R0-mnq"/>
+                        <constraint firstItem="VjH-hS-QNT" firstAttribute="centerX" secondItem="YXr-bI-N8H" secondAttribute="centerX" constant="-46" id="EXm-QV-lUE"/>
+                        <constraint firstAttribute="trailing" secondItem="h3S-m3-2YA" secondAttribute="trailing" constant="15" id="RYO-tr-9bn"/>
+                        <constraint firstAttribute="trailing" secondItem="Z2K-Tv-pTg" secondAttribute="trailing" id="VeG-Nz-Nfl"/>
+                        <constraint firstItem="KAN-8R-Dbl" firstAttribute="top" secondItem="h3S-m3-2YA" secondAttribute="bottom" constant="26" id="dKG-zA-HTv"/>
+                        <constraint firstItem="VjH-hS-QNT" firstAttribute="top" secondItem="h3S-m3-2YA" secondAttribute="bottom" constant="26" id="qly-in-wH8"/>
+                        <constraint firstItem="Z2K-Tv-pTg" firstAttribute="top" secondItem="YXr-bI-N8H" secondAttribute="top" id="sQR-KK-PP3"/>
+                        <constraint firstItem="h3S-m3-2YA" firstAttribute="centerY" secondItem="YXr-bI-N8H" secondAttribute="centerY" constant="-40" id="uoC-v2-0iJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hHt-Q5-LfA" secondAttribute="trailing" id="5iT-WF-XV0"/>
+                <constraint firstItem="YXr-bI-N8H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7IG-hA-7ak"/>
+                <constraint firstItem="hHt-Q5-LfA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8bB-cZ-SyI"/>
+                <constraint firstAttribute="bottom" secondItem="hHt-Q5-LfA" secondAttribute="bottom" id="972-Aa-MYc"/>
+                <constraint firstAttribute="trailing" secondItem="YXr-bI-N8H" secondAttribute="trailing" id="ANP-Qb-7FK"/>
+                <constraint firstItem="hHt-Q5-LfA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DuS-s9-WLy"/>
+                <constraint firstItem="YXr-bI-N8H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qtn-VY-7I8"/>
+                <constraint firstAttribute="bottom" secondItem="YXr-bI-N8H" secondAttribute="bottom" id="e0E-zB-oeG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="37.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_light_icon" width="17" height="16"/>
+    </resources>
+</document>

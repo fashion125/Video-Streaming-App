@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNextLTPro-Light.otf">
+            <string>AvenirNextLTPro-Light</string>
+        </array>
+        <array key="AvenirNextLTPro-Regular.otf">
+            <string>AvenirNextLTPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="InfoTableCell" customModule="Kanopy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="27.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcm-pX-XuI">
+                        <rect key="frame" x="15" y="6" width="40" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="r3O-t6-igN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Light" family="Avenir Next LT Pro" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trZ-d3-WkY">
+                        <rect key="frame" x="63" y="9" width="242" height="15"/>
+                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Regular" family="Avenir Next LT Pro" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="wcm-pX-XuI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Ole-xK-xRh"/>
+                    <constraint firstItem="trZ-d3-WkY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="Oxb-es-7EW"/>
+                    <constraint firstAttribute="trailing" secondItem="trZ-d3-WkY" secondAttribute="trailing" constant="15" id="YLU-Ju-Tk7"/>
+                    <constraint firstItem="trZ-d3-WkY" firstAttribute="leading" secondItem="wcm-pX-XuI" secondAttribute="trailing" constant="8" id="d8n-WA-OoQ"/>
+                    <constraint firstItem="wcm-pX-XuI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gse-Cj-VEW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="wcm-pX-XuI" id="8ja-tq-exi"/>
+                <outlet property="titleWidth" destination="r3O-t6-igN" id="9ki-El-StS"/>
+                <outlet property="valueLabel" destination="trZ-d3-WkY" id="dyb-sT-4dh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

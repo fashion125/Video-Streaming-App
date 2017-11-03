@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNextLTPro-Medium.otf">
+            <string>AvenirNextLTPro-Medium</string>
+        </array>
+        <array key="AvenirNextLTPro-Regular.otf">
+            <string>AvenirNextLTPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="MembershipTableCell" customModule="Kanopy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="106.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhE-JS-jzY">
+                        <rect key="frame" x="241" y="39.5" width="64" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="2cF-Rl-8Z1"/>
+                            <constraint firstAttribute="width" constant="64" id="sYo-7l-bQc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Medium" family="Avenir Next LT Pro" pointSize="14"/>
+                        <color key="textColor" red="0.90196078431372551" green="0.32941176470588235" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIH-qE-v7D">
+                        <rect key="frame" x="15" y="50.5" width="6" height="6"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="RWK-FY-q9W"/>
+                            <constraint firstAttribute="width" constant="6" id="XEa-hJ-sNn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xan-BI-vyp">
+                        <rect key="frame" x="27" y="45.5" width="198" height="16"/>
+                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Regular" family="Avenir Next LT Pro" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3a-rX-W1Y">
+                        <rect key="frame" x="15" y="105.5" width="290" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7x5-de-v3Z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JhE-JS-jzY" secondAttribute="trailing" constant="15" id="6rk-0m-syJ"/>
+                    <constraint firstItem="A3a-rX-W1Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="EfP-CC-WUq"/>
+                    <constraint firstItem="xan-BI-vyp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="H1B-Cl-8tc"/>
+                    <constraint firstAttribute="trailing" secondItem="A3a-rX-W1Y" secondAttribute="trailing" constant="15" id="SyN-hx-Moe"/>
+                    <constraint firstItem="JhE-JS-jzY" firstAttribute="leading" secondItem="xan-BI-vyp" secondAttribute="trailing" constant="16" id="UjP-xO-isz"/>
+                    <constraint firstAttribute="bottom" secondItem="A3a-rX-W1Y" secondAttribute="bottom" id="ZyC-ZH-6cL"/>
+                    <constraint firstItem="wIH-qE-v7D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="h7M-Ti-DoB"/>
+                    <constraint firstItem="wIH-qE-v7D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ig2-C2-fxA"/>
+                    <constraint firstItem="JhE-JS-jzY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oyJ-pN-Qh7"/>
+                    <constraint firstItem="xan-BI-vyp" firstAttribute="leading" secondItem="wIH-qE-v7D" secondAttribute="trailing" constant="6" id="qlt-gh-1cm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="pointView" destination="wIH-qE-v7D" id="QAu-eu-7Eg"/>
+                <outlet property="statusLabel" destination="JhE-JS-jzY" id="X3H-l5-dpb"/>
+                <outlet property="titleLabel" destination="xan-BI-vyp" id="Utr-qd-wdK"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="105.5"/>
+        </tableViewCell>
+    </objects>
+</document>

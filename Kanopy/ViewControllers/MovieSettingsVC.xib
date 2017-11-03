@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNextLTPro-Demi.otf">
+            <string>AvenirNextLTPro-Demi</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieSettingsVC" customModule="Kanopy" customModuleProvider="target">
+            <connections>
+                <outlet property="captionsTableView" destination="6rw-77-rN0" id="z3B-sD-rEN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1s8-jR-phD">
+                    <rect key="frame" x="20" y="0.0" width="355" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAPTIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcf-Op-RAO">
+                            <rect key="frame" x="0.0" y="32" width="81" height="16"/>
+                            <fontDescription key="fontDescription" name="AvenirNextLTPro-Demi" family="Avenir Next LT Pro" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6rw-77-rN0">
+                            <rect key="frame" x="0.0" y="63" width="305" height="604"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6rw-77-rN0" firstAttribute="leading" secondItem="1s8-jR-phD" secondAttribute="leading" id="5Oe-dz-6fg"/>
+                        <constraint firstAttribute="trailing" secondItem="6rw-77-rN0" secondAttribute="trailing" constant="50" id="5sq-ri-F1H"/>
+                        <constraint firstItem="6rw-77-rN0" firstAttribute="top" secondItem="lcf-Op-RAO" secondAttribute="bottom" constant="15" id="7k7-XC-BeY"/>
+                        <constraint firstAttribute="bottom" secondItem="6rw-77-rN0" secondAttribute="bottom" id="YGN-ZG-PLg"/>
+                        <constraint firstItem="lcf-Op-RAO" firstAttribute="top" secondItem="1s8-jR-phD" secondAttribute="top" constant="32" id="toV-UY-NVC"/>
+                        <constraint firstItem="lcf-Op-RAO" firstAttribute="leading" secondItem="1s8-jR-phD" secondAttribute="leading" id="xwt-M6-xkh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evg-Ll-uiK">
+                    <rect key="frame" x="305" y="0.0" width="70" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="DgS-n4-4zz"/>
+                        <constraint firstAttribute="height" constant="74" id="xUO-wY-8UY"/>
+                    </constraints>
+                    <state key="normal" image="close_icon"/>
+                    <connections>
+                        <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="nOb-sw-1DN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Evg-Ll-uiK" secondAttribute="trailing" id="NAD-Ao-Q6M"/>
+                <constraint firstItem="1s8-jR-phD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ulz-Ju-7zS"/>
+                <constraint firstItem="Evg-Ll-uiK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZPe-rw-uLU"/>
+                <constraint firstAttribute="bottom" secondItem="1s8-jR-phD" secondAttribute="bottom" id="h6D-LE-oBa"/>
+                <constraint firstItem="1s8-jR-phD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="rIb-lu-kJ4"/>
+                <constraint firstAttribute="trailing" secondItem="1s8-jR-phD" secondAttribute="trailing" id="vmk-4P-f4T"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <point key="canvasLocation" x="22.5" y="30.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_icon" width="16" height="16"/>
+    </resources>
+</document>
