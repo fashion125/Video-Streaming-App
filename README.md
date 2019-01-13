@@ -1,4 +1,4 @@
-# VideoStreaming
+# Video-Streaming
 This is a video streaming project in Swift
 
 https://www.kanopystreaming.com/
