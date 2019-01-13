@@ -1,5 +1,5 @@
 # Video-Streaming
-This is a video streaming project in Swift
+This is a video streaming project in Swift for for iPhone, iPad and Apple TV.
 
 https://www.kanopystreaming.com/
 
